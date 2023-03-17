@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_03_17_150959) do
+ActiveRecord::Schema.define(version: 2023_03_17_165024) do
 
   create_table "actors", force: :cascade do |t|
     t.string "name"
@@ -44,6 +44,9 @@ ActiveRecord::Schema.define(version: 2023_03_17_150959) do
     t.integer "director_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "duration"
+    t.integer "year"
+    t.string "image"
   end
 
 end
