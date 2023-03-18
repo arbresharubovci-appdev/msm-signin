@@ -45,6 +45,7 @@ class UserAuthenticationController < ApplicationController
     @user.email = params.fetch("query_email")
 
     save_status = @user.save
+    
 
     if save_status == true
       session[:user_id] = @user.id
