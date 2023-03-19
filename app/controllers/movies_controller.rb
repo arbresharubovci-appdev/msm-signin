@@ -6,7 +6,7 @@ class MoviesController < ApplicationController
     b.movie_id = params.fetch("the_movie_id")
     b.save
 
-    redirect_to "/"
+    redirect_to "/bookmarks" , :notice => "Bookmarked movie"
   end
 
   def index
